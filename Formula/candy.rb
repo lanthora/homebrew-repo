@@ -4,7 +4,7 @@ class Candy < Formula
   url "https://github.com/lanthora/candy/archive/v2.5.tar.gz"
   sha256 "5946056353e0bfc04630ae22be682dd1cf992e2e5f23c5d7d412c5bbae3514fc"
   license "MIT"
-  revision 1
+  head "https://github.com/lanthora/candy.git"
 
   depends_on "cmake" => :build
   depends_on "argp-standalone" => :build
