@@ -9,6 +9,7 @@ class Candy < Formula
   depends_on "cmake" => :build
   depends_on "argp-standalone" => :build
   depends_on "uriparser" => :build
+  depends_on "pkg-config" => :build
   depends_on "libconfig"
   depends_on "openssl"
   depends_on "spdlog"
