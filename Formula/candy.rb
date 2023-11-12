@@ -1,8 +1,8 @@
 class Candy < Formula
   desc "A easy-to-deploy and peer-to-peer virtual private network"
   homepage "https://github.com/lanthora/candy"
-  url "https://github.com/lanthora/candy/archive/v2.5.tar.gz"
-  sha256 "5946056353e0bfc04630ae22be682dd1cf992e2e5f23c5d7d412c5bbae3514fc"
+  url "https://github.com/lanthora/candy/archive/v2.6.tar.gz"
+  sha256 "5f796ec3b6ba4fc8c1211e0457ca01eca3e4f6cead25fca0bf192c33dec7f0ee"
   license "MIT"
   head "https://github.com/lanthora/candy.git"
 
@@ -15,7 +15,7 @@ class Candy < Formula
   depends_on "spdlog"
 
   def install
-    system "cmake", "-DCMAKE_BUILD_TYPE=Release", "-S", ".", "-B", "build", *std_cmake_args
+    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
     etc.install "candy.conf"
