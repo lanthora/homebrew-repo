@@ -1,8 +1,8 @@
 class Candy < Formula
   desc "Another virtual private network that supports peer-to-peer connections"
   homepage "https://github.com/lanthora/candy"
-  url "https://github.com/lanthora/candy/archive/v3.9.1.tar.gz"
-  sha256 "d1929747035553f3b9381cb7bacbd9fcd862252d66dcb5fef3324387befb5512"
+  url "https://github.com/lanthora/candy/archive/v4.0.tar.gz"
+  sha256 "be689ebe3fc09b8c7029596265f6fd51b4873208f0b2fe8640a69631ebcfcab0"
   license "MIT"
   head "https://github.com/lanthora/candy.git"
 
