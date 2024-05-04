@@ -1,8 +1,8 @@
 class Candy < Formula
   desc "A reliable, low-latency, and anti-censorship virtual private network"
   homepage "https://github.com/lanthora/candy"
-  url "https://github.com/lanthora/candy/archive/v5.7.tar.gz"
-  sha256 "371fa21ff9db3136c2a3292685a6789abe75327cc6275d50d0d6abe3c3d4ffba"
+  url "https://github.com/lanthora/candy/archive/v5.8.tar.gz"
+  sha256 "767ba0c676599484e82103bfe78c159bafbb6e443418727d56c73514b24a3904"
   license "MIT"
   head "https://github.com/lanthora/candy.git"
 
