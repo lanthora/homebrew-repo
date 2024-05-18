@@ -1,6 +1,7 @@
 class Candy < Formula
   desc "A reliable, low-latency, and anti-censorship virtual private network"
   homepage "https://github.com/lanthora/candy"
+  revision 1
   url "https://github.com/lanthora/candy/archive/v5.8.5.tar.gz"
   sha256 "ade6f8021f6d5e60e35d1cd0433c3dd1d3c17384e4acd282b1691ca1b585ca18"
   license "MIT"
@@ -26,8 +27,6 @@ class Candy < Formula
     run [opt_bin/"candy", "-c", etc/"candy.cfg"]
     keep_alive true
     require_root true
-    error_log_path var/"log/candy.log"
-    log_path var/"log/candy.log"
   end
 
 end
