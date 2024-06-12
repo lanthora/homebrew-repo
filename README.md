@@ -24,14 +24,3 @@ sudo brew services start lanthora/repo/candy
 
 Mac 默认的睡眠策略是: 1.在关闭屏幕一段时间后睡眠; 2.睡眠时收到网络包唤醒. Candy 运行过程中每 30 秒产生一个心跳,这会导致机器被频繁唤醒.对于作为服务器长期开机的 Mac 设备来说,可以关闭睡眠功能;对于作为普通设备的笔记本来说,可以关闭网络唤醒功能.参考苹果官网[睡眠与唤醒](https://support.apple.com/zh-cn/guide/mac-help/mchle41a6ccd/mac)完成设置.
 
-## Cake
-
-```bash
-brew install cake
-```
-
-目前还没有搞定打包,所以需要在命令行中启动
-
-```bash
-sudo cake
-```
