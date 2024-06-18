@@ -7,11 +7,10 @@ class Candy < Formula
   head "https://github.com/lanthora/candy.git"
 
   depends_on "cmake" => :build
-  depends_on "argp-standalone" => :build
   depends_on "pkg-config" => :build
-  depends_on "libconfig"
   depends_on "openssl"
   depends_on "poco"
+  depends_on "fmt"
   depends_on "spdlog"
 
   def install
