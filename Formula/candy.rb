@@ -9,12 +9,11 @@ class Candy < Formula
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "openssl"
-  depends_on "poco"
   depends_on "fmt"
   depends_on "spdlog"
 
   def install
-    system "cmake", "-S", ".", "-B", "build", "-DCANDY_STATIC_POCO=1", *std_cmake_args
+    system "cmake", "-S", ".", "-B", "build", "-DCANDY_STATIC_POCO=1", "-DHOMEBREW_ALLOW_FETCHCONTENT=ON", *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
     etc.install "candy.cfg"
