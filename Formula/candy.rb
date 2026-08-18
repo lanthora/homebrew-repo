@@ -1,8 +1,8 @@
 class Candy < Formula
   desc "A reliable, low-latency, and anti-censorship virtual private network"
   homepage "https://github.com/lanthora/candy"
-  url "https://github.com/lanthora/candy/archive/v6.1.8.tar.gz"
-  sha256 "fb67cc5fe7a2dffa7681483efc65e5d25f29645953c7bdd00eab8fead44e84a6"
+  url "https://github.com/lanthora/candy/archive/v6.1.11.tar.gz"
+  sha256 "2d0895ffbc79cc598f484a70e0786d465adca04b8af1562b3cf40ac18ccc55b5"
   license "MIT"
   head "https://github.com/lanthora/candy.git"
   revision 1
@@ -10,8 +10,6 @@ class Candy < Formula
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "openssl"
-  depends_on "fmt"
-  depends_on "spdlog"
   depends_on "poco"
 
   def install
